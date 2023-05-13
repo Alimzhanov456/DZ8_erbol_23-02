@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import Container from "./Container";
+import Card from "./Card";
 
-function App() {
+// Первый пример
+// const App = () => {
+//   return (
+//     <Container>
+//       <h1>Привет, мир!</h1>
+//       <p>Это содержимое контейнера.</p>
+//     </Container>
+//   );
+// };
+
+// Второй пример
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card title="Заголовок карточки">
+      <p>Это содержимое карточки.</p>
+      <p>Дополнительный текст.</p>
+    </Card>
   );
-}
+};
 
 export default App;
+
+
